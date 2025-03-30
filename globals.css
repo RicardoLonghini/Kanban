@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f3f4f6;
+  --foreground: #111827;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow p-4 hover:shadow-md transition-shadow;
+}
+
+.button {
+  @apply px-4 py-2 rounded font-medium transition-colors;
+}
+
+.button-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.button-secondary {
+  @apply bg-gray-200 text-gray-700 hover:bg-gray-300;
+}
